@@ -1,38 +1,62 @@
-.App {
+.app-wrapper {
+  display: grid;
+  /* Обводим зелёной линией */
+  border: 2px solid rgb(80, 145, 27);
+  /* Скругляем углы на 5 пикселей */
+  border-radius: 5px;
+  height: 100vh;
+
+  grid-template-areas:
+    "h h h h h"
+    ". n c c ."
+    ". n p f ."
+    ". n p . ."
+  ;
+
+  grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.2fr;
+  column-gap: 5%;
+  row-gap: 5%;
+}
+
+.app-wrapper * {
+  border: 1px dashed;
+  /* Обводим чёрным пунктиром */
+  border-radius: 10px;
+  /* Скругляем углы на 10 пикселей */
+  background-color: rgba(82, 29, 179, 0.5);
+  /* Фон красим фиолетовым */
   text-align: center;
+  /* Контент размещаем в центре по горизонтали */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper header {
+  grid-area: h;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-wrapper nav {
+  grid-area: n;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  grid-area: c;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-wrapper .friends {
+  grid-area: f;
+}
+
+.app-wrapper .post {
+  grid-area: p;
 }
