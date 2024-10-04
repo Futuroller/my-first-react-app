@@ -1,0 +1,21 @@
+.content {
+    display: grid;
+    /* Обводим зелёной линией */
+    border: 2px solid rgb(80, 145, 27);
+    /* Скругляем углы на 5 пикселей */
+    border-radius: 5px;
+    height: 100vh;
+
+    grid-template-areas:
+        "p p p p p"
+        "s s s f f"
+        "s s s f f"
+        "s s s . ."
+    ;
+
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.2fr;
+
+    column-gap: 5%;
+    row-gap: 5%;
+    grid-area: c;
+}

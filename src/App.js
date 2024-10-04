@@ -1,19 +1,14 @@
 import './App.css';
-import Friends from './components/Friends';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Post from './components/Post';
-import Profile from './components/Profile';
-
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Content from './components/Content/Content';
 
 function App() {
   return (
     <div className='app-wrapper'>
       <Header />
       <Navbar />
-      <Profile />
-      <Friends />
-      <Post />
+      <Content />
     </div>
   );
 }

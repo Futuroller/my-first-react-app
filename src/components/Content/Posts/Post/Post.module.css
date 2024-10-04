@@ -1,0 +1,14 @@
+.post {
+    grid-area: s;
+    display: flex;
+}
+
+.post p {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.post img {
+    width: 50px;
+    margin: 10px;
+}
