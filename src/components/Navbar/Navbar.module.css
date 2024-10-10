@@ -4,9 +4,15 @@ nav {
 
 .item {
     color: white;
+    margin: 10px;
 }
 
-.item.active {
+.item a.active {
     color: gold;
     font-weight: 700;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
 }

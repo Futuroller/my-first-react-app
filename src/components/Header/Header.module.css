@@ -1,5 +1,6 @@
 header {
     grid-area: h;
+    height: 70px;
 }
 
 header img {

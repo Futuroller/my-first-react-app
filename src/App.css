@@ -10,10 +10,11 @@
     ". n c c ."
     ". n c c ."
     ". . c c ."
+    ". . . . ."
   ;
 
   grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.2fr;
+  grid-template-rows: 70px auto 1fr 1fr 1fr 0.2fr;
   column-gap: 5%;
   row-gap: 3%;
 }
@@ -27,4 +28,9 @@
   /* Фон красим фиолетовым */
   text-align: center;
   /* Контент размещаем в центре по горизонтали */
+}
+
+.app-wrapper-content {
+  grid-area: c;
+  height: 1000px;
 }
