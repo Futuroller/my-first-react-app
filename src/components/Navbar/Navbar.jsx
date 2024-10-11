@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav>
             <div className={m.item}>
-                <NavLink to='/content' className={navData => navData.isActive ? m.active : m.item}>Профиль</NavLink>
+                <NavLink to='/profile' className={navData => navData.isActive ? m.active : m.item}>Профиль</NavLink>
             </div>
             <div className={m.item}>
                 <a>Лента</a>

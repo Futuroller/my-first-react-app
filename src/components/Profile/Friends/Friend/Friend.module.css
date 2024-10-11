@@ -1,0 +1,17 @@
+.friend {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+    margin: 10px;
+}
+
+.friend img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.friend a {
+    color: white;
+}

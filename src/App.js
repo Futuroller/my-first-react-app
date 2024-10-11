@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Content from './components/Content/Content';
+import Profile from './components/Profile/Profile';
 import Dialogs from './components/Dialogs/Dialogs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,8 +13,8 @@ function App(props) {
         <Navbar />
         <div className='app-wrapper-content'>
             <Routes>
-              <Route path='/content/*' element={<Content />} />
-              <Route path='/dialogs/*' element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
+              <Route path='/profile/*' element={<Profile state={props.state}/>} />
+              <Route path='/dialogs/*' element={<Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages} />} />
             </Routes> 
         </div>
       </div>

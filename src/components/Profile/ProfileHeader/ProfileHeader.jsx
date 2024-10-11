@@ -1,6 +1,6 @@
-import m from './Profile.module.css';
+import m from './ProfileHeader.module.css';
 
-function Profile() {
+function ProfileHeader() {
     return (
         <div className={m.profile}>
             <img src='/images/profile_bg.jpg'></img>
@@ -8,4 +8,4 @@ function Profile() {
     );
 }
 
-export default Profile;
+export default ProfileHeader;

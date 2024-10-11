@@ -1,0 +1,6 @@
+.friends {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
