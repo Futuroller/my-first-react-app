@@ -1,6 +1,9 @@
 .dialogs {
     display: grid;
-
+    grid-template-areas:
+        "d m"
+        "t t"
+    ;
     grid-template-columns: 2fr 10fr;
     /* grid-template-rows: 2fr 10fr; */
 }
@@ -23,3 +26,19 @@
 }
 
 .messages * {}
+
+.typeMessageBlock {
+    grid-area: t;
+}
+
+.typeMessageBlock textarea {
+    background-color: aliceblue;
+    width: 40%;
+    height: 50px;
+}
+
+.typeMessageBlock button {
+    background-color: gold;
+    width: 30%;
+    height: 35px;
+}

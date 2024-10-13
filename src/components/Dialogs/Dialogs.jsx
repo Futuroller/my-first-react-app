@@ -18,6 +18,10 @@ function Dialogs(props) {
             <div className={m.messages}>
                 {messagesElements}
             </div>
+            <div className={m.typeMessageBlock}>
+                <div><textarea></textarea></div>
+                <div><button>Отправить</button></div>
+            </div>
         </div>
     );
 }

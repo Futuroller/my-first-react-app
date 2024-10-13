@@ -1,3 +1,17 @@
-.posts {
+.postsBlock {
     grid-area: s;
+}
+
+.postsBlock textarea {
+    background-color: aliceblue;
+    width: 50%;
+    height: 100px;
+}
+
+
+.addPostBtn {
+    width: 30%;
+    height: 35px;
+    background-color: gold;
+    color: black;
 }

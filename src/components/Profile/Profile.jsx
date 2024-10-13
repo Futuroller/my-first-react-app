@@ -7,8 +7,8 @@ function Profile(props) {
     return (
         <div className={m.content}>
             <ProfileHeader />
-            <Posts posts={props.state.profilePage.posts} />
-            <Friends friends={props.state.profilePage.friends} />
+            <Posts posts={props.profilePage.posts} addPost={props.addPost} postTextChanged={props.postTextChanged} newPostText={props.profilePage.newPostText} />
+            <Friends friends={props.profilePage.friends} />
         </div>
     );
 }

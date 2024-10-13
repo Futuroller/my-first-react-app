@@ -4,6 +4,9 @@
     border: 2px solid rgb(80, 145, 27);
     /* Скругляем углы на 5 пикселей */
     border-radius: 5px;
+    max-width: 100%;
+    width: 1000px;
+    min-width: 600px;
 
     grid-template-areas:
         "p p p p p"

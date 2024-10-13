@@ -1,1 +1,3 @@
-.dialog {}
+.dialog {
+    grid-area: d;
+}
