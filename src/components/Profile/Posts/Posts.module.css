@@ -15,3 +15,9 @@
     background-color: gold;
     color: black;
 }
+
+.posts {
+    max-height: 600px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
