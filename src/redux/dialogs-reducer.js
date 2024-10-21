@@ -1,7 +1,23 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
 const MESSAGE_TEXT_CHANGED = 'MESSAGE-TEXT-CHANGED';
 
-export function dialogsReducer(state, action) {
+let initialState = {
+    dialogs: [
+        { id: 1, name: 'Кирилл' },
+        { id: 2, name: 'Абраам' },
+        { id: 3, name: 'Артём' },
+        { id: 4, name: 'Семён' },
+        { id: 5, name: 'Сергей' }
+    ],
+    messages: [
+        { id: 1, message: 'Как твоё ничего?' },
+        { id: 2, message: 'Ты видел мои огромные реакты?' },
+        { id: 3, message: 'Йоу' }
+    ],
+    newMessageText: 'Гойда, Амням'
+}
+
+function dialogsReducer(state = initialState, action) {
 
     switch (action.type) {
         case SEND_MESSAGE: 
